@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="main.js" defer></script>
+  <title>Login</title>
+</head>
+<body>
+  <div class="login">
+    <div class="form-container">
+      <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+      <h1 class="title">Iniciar Sesión</h1>
+      <p class="subtitle">Ingrese la información de su cuenta</p>
+
+      <form action="/" class="form">
+        <label for="password" class="label">Usuario</label>
+        <input type="password" id="user" placeholder="*********" class="input input-password">
+
+        <label for="new-password" class="label">Contraseña</label>
+        <input type="password" id="password" placeholder="*********" class="input input-password">
+
+        <input type="button" value="Confirmar" onclick="validarLogin(getPasswordValue(), getUserValue())" class="primary-button login-button">
+
+        <label class="label aviso" id="aviso">Usuario y Contraseña incorrecto, por favor intente de nuevo</label>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
